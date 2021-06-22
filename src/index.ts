@@ -1,14 +1,12 @@
+export * from './errors/bad-request-error';
+export * from './errors/authorization-error';
+export * from './errors/custom-error';
+export * from './errors/database-connection-error';
+export * from './errors/not-found-error';
+export * from './errors/request-validation-error';
 
 
-interface Color {
-  red: number;
-  blue: number;
-  green: number;
-}
-
-
-export const color: Color = {
-  red: 10,
-  blue: 10,
-  green: 15
-};
+export * from './middlewares/current-user';
+export * from './middlewares/error-handler';
+export * from './middlewares/validate-request';
+export * from './middlewares/require-auth';
