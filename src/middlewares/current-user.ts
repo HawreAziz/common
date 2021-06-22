@@ -15,9 +15,7 @@ declare global {
 }
 
 export const currentUser = (req: Request, res: Response, next: NextFunction) => {
-  console.log("We are in current user middleware");
   if (!req.session ?.jwt) {
-    console.log("json webtoken not provided");
     return next();
   }
   try {
