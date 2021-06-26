@@ -2,7 +2,7 @@ import { CustomError } from './custom-error';
 
 
 export class AuthorizationError extends CustomError {
-  statusCode = 404;
+  statusCode = 401;
 
   constructor(message: string) {
     super(message);
