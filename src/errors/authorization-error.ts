@@ -7,7 +7,7 @@ export class AuthorizationError extends CustomError {
   constructor(message: string) {
     super(message);
 
-    Object.setPrototypeOf(this, AuthorizationError);
+    Object.setPrototypeOf(this, AuthorizationError.prototype);
   }
 
   serializeError() {
