@@ -6,7 +6,6 @@ export class NotFoundError extends CustomError {
 
   constructor() {
     super("Resource not found");
-
     Object.setPrototypeOf(this, NotFoundError.prototype);
   }
 
